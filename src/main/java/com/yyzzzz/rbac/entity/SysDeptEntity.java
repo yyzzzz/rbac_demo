@@ -16,29 +16,9 @@ import lombok.Data;
  */
 @Data
 @TableName("sys_dept")
-public class SysDeptEntity implements Serializable {
+public class SysDeptEntity extends SysBaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * 乐观锁
-	 */
-	private Integer revision;
-	/**
-	 * 创建人
-	 */
-	private String createdBy;
-	/**
-	 * 创建时间
-	 */
-	private Date createdTime;
-	/**
-	 * 更新人
-	 */
-	private String updatedBy;
-	/**
-	 * 更新时间
-	 */
-	private Date updatedTime;
 	/**
 	 * 部门id
 	 */
@@ -64,9 +44,5 @@ public class SysDeptEntity implements Serializable {
 	 * 备注
 	 */
 	private String remark;
-	/**
-	 * 最后一次操作者Ip
-	 */
-	private String operateIp;
 
 }

@@ -16,29 +16,10 @@ import lombok.Data;
  */
 @Data
 @TableName("sys_acl")
-public class SysAclEntity implements Serializable {
+public class SysAclEntity extends SysBaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * 乐观锁
-	 */
-	private Integer revision;
-	/**
-	 * 创建人
-	 */
-	private String createdBy;
-	/**
-	 * 创建时间
-	 */
-	private Date createdTime;
-	/**
-	 * 更新人
-	 */
-	private String updatedBy;
-	/**
-	 * 更新时间
-	 */
-	private Date updatedTime;
+
 	/**
 	 * 权限id
 	 */
@@ -76,9 +57,5 @@ public class SysAclEntity implements Serializable {
 	 * 备注
 	 */
 	private String remark;
-	/**
-	 * 最后一次操作者Ip
-	 */
-	private String operateIp;
 
 }

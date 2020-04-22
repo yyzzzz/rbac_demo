@@ -6,6 +6,10 @@ package com.yyzzzz.rbac.utils;
  * @author Mark sunlightcs@gmail.com
  */
 public class Constant {
+    /** level 分隔符 */
+    public static final String SEPARATOR = ".";
+    /** level root */
+    public static final String ROOT = "0";
     /** 超级管理员ID */
     public static final int SUPER_ADMIN = 1;
     /**

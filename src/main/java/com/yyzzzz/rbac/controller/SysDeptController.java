@@ -1,12 +1,15 @@
 package com.yyzzzz.rbac.controller;
 
 import com.yyzzzz.rbac.entity.SysDeptEntity;
+import com.yyzzzz.rbac.entity.dto.SysDeptDTO;
 import com.yyzzzz.rbac.service.SysDeptService;
 import com.yyzzzz.rbac.utils.PageUtils;
 import com.yyzzzz.rbac.utils.R;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.Arrays;
 import java.util.Map;
 
@@ -53,8 +56,8 @@ public class SysDeptController {
      */
     @RequestMapping("/save")
 //    @RequiresPermissions("rbac:sysdept:save")
-    public R save(@RequestBody SysDeptEntity sysDept){
-		sysDeptService.save(sysDept);
+    public R save(@Valid @RequestBody SysDeptDTO deptDTO){
+		sysDeptService.saveDept(deptDTO);
 
         return R.ok();
     }

@@ -16,29 +16,9 @@ import lombok.Data;
  */
 @Data
 @TableName("sys_log")
-public class SysLogEntity implements Serializable {
+public class SysLogEntity extends SysBaseEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * 乐观锁
-	 */
-	private Integer revision;
-	/**
-	 * 创建人
-	 */
-	private String createdBy;
-	/**
-	 * 创建时间
-	 */
-	private Date createdTime;
-	/**
-	 * 更新人
-	 */
-	private String updatedBy;
-	/**
-	 * 更新时间
-	 */
-	private Date updatedTime;
 	/**
 	 * id
 	 */
@@ -64,9 +44,5 @@ public class SysLogEntity implements Serializable {
 	 * 当前是否复原过，0：否，1：是 当前是否复原过，0：否，1：是
 	 */
 	private Integer status;
-	/**
-	 * 最后一次操作者Ip
-	 */
-	private String operateIp;
 
 }

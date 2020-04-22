@@ -1,8 +1,9 @@
 package com.yyzzzz.rbac.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.yyzzzz.rbac.utils.PageUtils;
 import com.yyzzzz.rbac.entity.SysDeptEntity;
+import com.yyzzzz.rbac.entity.dto.SysDeptDTO;
+import com.yyzzzz.rbac.utils.PageUtils;
 
 import java.util.Map;
 
@@ -16,5 +17,7 @@ import java.util.Map;
 public interface SysDeptService extends IService<SysDeptEntity> {
 
     PageUtils queryPage(Map<String, Object> params);
+
+    void saveDept(SysDeptDTO deptDTO);
 }
 

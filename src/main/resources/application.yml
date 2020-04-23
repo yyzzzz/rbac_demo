@@ -7,7 +7,7 @@ spring:
     type: com.zaxxer.hikari.HikariDataSource
     #MySQL????
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/rbac_demo?characterEncoding=UTF-8&useSSL=false&useUnicode=true&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://localhost:3306/rbac_demo?characterEncoding=UTF-8&useSSL=false&useUnicode=true&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
     username: root
     password: P@ss1234
     hikari:
@@ -63,4 +63,4 @@ renren:
 mybatis-plus:
   global-config:
     db-config:
-      logic-delete-field: is_deleted
+      logic-delete-field: isDeleted

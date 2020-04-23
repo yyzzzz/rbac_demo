@@ -6,7 +6,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-import java.time.LocalDateTime;
 import java.util.Date;
 
 /**
@@ -23,9 +22,9 @@ public class AuditMetaObjectHandler implements MetaObjectHandler {
         log.info("start insert fill ....");
         // 起始版本 3.3.0(推荐使用)
         this.strictInsertFill(metaObject, "createdBy", String.class, "admin");
-        this.strictInsertFill(metaObject, "createdTime", Date.class, LocalDateTime.now());
+        this.strictInsertFill(metaObject, "createdTime", Date.class, new Date());
         this.strictInsertFill(metaObject, "updatedBy", String.class, "admin");
-        this.strictInsertFill(metaObject, "updatedTime", Date.class, LocalDateTime.now());
+        this.strictInsertFill(metaObject, "updatedTime", Date.class, new Date());
         this.strictInsertFill(metaObject, "operateIp", String.class, "127.0.0.1");
     }
 
@@ -33,7 +32,7 @@ public class AuditMetaObjectHandler implements MetaObjectHandler {
     public void updateFill(MetaObject metaObject) {
         log.info("start update fill ....");
         this.strictInsertFill(metaObject, "updatedBy", String.class, "admin");
-        this.strictInsertFill(metaObject, "updatedTime", Date.class, LocalDateTime.now());
+        this.strictInsertFill(metaObject, "updatedTime", Date.class, new Date());
         this.strictInsertFill(metaObject, "operateIp", String.class, "127.0.0.1");
     }
 }

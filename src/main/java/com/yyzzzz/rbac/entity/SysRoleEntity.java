@@ -1,5 +1,6 @@
 package com.yyzzzz.rbac.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 
@@ -22,7 +23,7 @@ public class SysRoleEntity extends SysBaseEntity implements Serializable {
 	/**
 	 * 角色id
 	 */
-	@TableId
+	@TableId(type = IdType.AUTO)
 	private Integer id;
 	/**
 	 * 角色名称

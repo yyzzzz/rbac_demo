@@ -5,6 +5,7 @@ import com.yyzzzz.rbac.entity.SysDeptEntity;
 import com.yyzzzz.rbac.entity.dto.SysDeptDTO;
 import com.yyzzzz.rbac.utils.PageUtils;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -19,5 +20,9 @@ public interface SysDeptService extends IService<SysDeptEntity> {
     PageUtils queryPage(Map<String, Object> params);
 
     void saveDept(SysDeptDTO deptDTO);
+
+    List<SysDeptDTO> deptTree();
+
+    void updateDept(SysDeptDTO deptDTO);
 }
 

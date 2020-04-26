@@ -1,4 +1,4 @@
-package com.yyzzzz.rbac.utils;
+package com.yyzzzz.rbac.common;
 
 import org.springframework.http.HttpStatus;
 

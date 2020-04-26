@@ -2,7 +2,7 @@ package com.yyzzzz.rbac.service.impl;
 
 import com.yyzzzz.rbac.entity.dto.SysDeptDTO;
 import com.yyzzzz.rbac.entity.mapstruct.SysDeptMapStruct;
-import com.yyzzzz.rbac.utils.Constant;
+import com.yyzzzz.rbac.common.Constant;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,7 +16,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.yyzzzz.rbac.utils.PageUtils;
-import com.yyzzzz.rbac.utils.Query;
+import com.yyzzzz.rbac.common.Query;
 
 import com.yyzzzz.rbac.dao.SysDeptDao;
 import com.yyzzzz.rbac.entity.SysDeptEntity;

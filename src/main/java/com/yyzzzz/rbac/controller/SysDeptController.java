@@ -4,9 +4,8 @@ import com.yyzzzz.rbac.entity.SysDeptEntity;
 import com.yyzzzz.rbac.entity.dto.SysDeptDTO;
 import com.yyzzzz.rbac.service.SysDeptService;
 import com.yyzzzz.rbac.utils.PageUtils;
-import com.yyzzzz.rbac.utils.R;
+import com.yyzzzz.rbac.common.R;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;

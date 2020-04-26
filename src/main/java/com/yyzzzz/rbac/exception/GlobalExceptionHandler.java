@@ -1,6 +1,6 @@
 package com.yyzzzz.rbac.exception;
 
-import com.yyzzzz.rbac.utils.ResultVo;
+import com.yyzzzz.rbac.common.ResultVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.BindException;
 import org.springframework.validation.FieldError;

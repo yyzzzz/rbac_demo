@@ -1,4 +1,4 @@
-package com.yyzzzz.rbac.utils;
+package com.yyzzzz.rbac.common;
 
 import com.alibaba.fastjson.JSON;
 import org.slf4j.Logger;

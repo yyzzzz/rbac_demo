@@ -1,4 +1,4 @@
-package com.yyzzzz.rbac.utils;
+package com.yyzzzz.rbac.common;
 
 /**
  * 常量

@@ -3,7 +3,7 @@ package com.yyzzzz.rbac.controller;
 import com.yyzzzz.rbac.entity.SysUserEntity;
 import com.yyzzzz.rbac.service.SysUserService;
 import com.yyzzzz.rbac.utils.PageUtils;
-import com.yyzzzz.rbac.utils.R;
+import com.yyzzzz.rbac.common.R;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

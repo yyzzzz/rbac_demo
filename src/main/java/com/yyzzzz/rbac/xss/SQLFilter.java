@@ -1,6 +1,6 @@
 package com.yyzzzz.rbac.xss;
 
-import com.yyzzzz.rbac.utils.RRException;
+import com.yyzzzz.rbac.common.RRException;
 import org.apache.commons.lang3.StringUtils;
 
 /**

@@ -8,7 +8,7 @@ import com.yyzzzz.rbac.entity.SysRoleAclEntity;
 import com.yyzzzz.rbac.service.SysRoleAclService;
 import com.yyzzzz.rbac.utils.PageUtils;
 import org.springframework.stereotype.Service;
-import com.yyzzzz.rbac.utils.Query;
+import com.yyzzzz.rbac.common.Query;
 import java.util.Map;
 
 

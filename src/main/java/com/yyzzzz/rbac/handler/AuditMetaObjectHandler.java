@@ -21,11 +21,11 @@ public class AuditMetaObjectHandler implements MetaObjectHandler {
     public void insertFill(MetaObject metaObject) {
         log.info("start insert fill ....");
         // 起始版本 3.3.0(推荐使用)
-        this.strictInsertFill(metaObject, "createdBy", String.class, "admin");
+        this.strictInsertFill(metaObject, "createdBy", String.class, "admin"); // TODO
         this.strictInsertFill(metaObject, "createdTime", Date.class, new Date());
         this.strictInsertFill(metaObject, "updatedBy", String.class, "admin");
         this.strictInsertFill(metaObject, "updatedTime", Date.class, new Date());
-        this.strictInsertFill(metaObject, "operateIp", String.class, "127.0.0.1");
+        this.strictInsertFill(metaObject, "operateIp", String.class, "127.0.0.1"); // TODO
     }
 
     @Override

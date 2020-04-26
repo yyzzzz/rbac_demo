@@ -1,4 +1,4 @@
-package com.yyzzzz.rbac.utils;
+package com.yyzzzz.rbac.common;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.metadata.OrderItem;

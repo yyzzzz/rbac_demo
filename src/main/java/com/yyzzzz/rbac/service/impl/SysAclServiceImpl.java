@@ -6,7 +6,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.yyzzzz.rbac.utils.PageUtils;
-import com.yyzzzz.rbac.utils.Query;
+import com.yyzzzz.rbac.common.Query;
 
 import com.yyzzzz.rbac.dao.SysAclDao;
 import com.yyzzzz.rbac.entity.SysAclEntity;

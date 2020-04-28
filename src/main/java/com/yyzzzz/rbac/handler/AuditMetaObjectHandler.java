@@ -1,6 +1,8 @@
 package com.yyzzzz.rbac.handler;
 
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
+import com.yyzzzz.rbac.utils.HttpContextUtils;
+import com.yyzzzz.rbac.utils.IpUtils;
 import org.apache.ibatis.reflection.MetaObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +27,7 @@ public class AuditMetaObjectHandler implements MetaObjectHandler {
         this.strictInsertFill(metaObject, "createdTime", Date.class, new Date());
         this.strictInsertFill(metaObject, "updatedBy", String.class, "admin");
         this.strictInsertFill(metaObject, "updatedTime", Date.class, new Date());
-        this.strictInsertFill(metaObject, "operateIp", String.class, "127.0.0.1"); // TODO
+        this.strictInsertFill(metaObject, "operateIp", String.class, IpUtils.getIpAddr(HttpContextUtils.getRequest()));
     }
 
     @Override
@@ -33,6 +35,6 @@ public class AuditMetaObjectHandler implements MetaObjectHandler {
         log.info("start update fill ....");
         this.strictInsertFill(metaObject, "updatedBy", String.class, "admin");
         this.strictInsertFill(metaObject, "updatedTime", Date.class, new Date());
-        this.strictInsertFill(metaObject, "operateIp", String.class, "127.0.0.1");
+        this.strictInsertFill(metaObject, "operateIp", String.class, IpUtils.getIpAddr(HttpContextUtils.getRequest()));
     }
 }
